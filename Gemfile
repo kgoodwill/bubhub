@@ -26,6 +26,13 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
 gem 'spring',        group: :development
 
+group :test do
+  gem 'capybara' # Simulates user actions for cucumber
+  gem 'cucumber-rails', :require => false # Cucmber features
+  gem 'database_cleaner'  # Provides strategies for cleaning up the test db after test runs
+end
+
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
