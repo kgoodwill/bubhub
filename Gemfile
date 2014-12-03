@@ -30,6 +30,13 @@ gem 'spring',        group: :development
 #Use Haml for views
 gem 'haml'
 
+group :test do
+  gem 'capybara' # Simulates user actions for cucumber
+  gem 'cucumber-rails', :require => false # Cucmber features
+  gem 'database_cleaner'  # Provides strategies for cleaning up the test db after test runs
+end
+
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
