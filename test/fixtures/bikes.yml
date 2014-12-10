@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  bike_id: MyString
+  location_id: MyString
+
+two:
+  bike_id: MyString
+  location_id: MyString
