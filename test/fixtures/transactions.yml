@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  bu_id: MyString
+  bike_id: MyString
+  location_id: MyString
+  out_time: 2014-12-09 21:49:09
+  in_time: 2014-12-09 21:49:09
+
+two:
+  bu_id: MyString
+  bike_id: MyString
+  location_id: MyString
+  out_time: 2014-12-09 21:49:09
+  in_time: 2014-12-09 21:49:09
