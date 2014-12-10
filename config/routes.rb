@@ -4,6 +4,7 @@ Rails.application.routes.draw do
 
   # You can have the root of your site routed with "root"
   root :to => 'welcome#index'
+  resources :resources
   get 'join' => 'welcome#join'  
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

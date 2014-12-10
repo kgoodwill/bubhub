@@ -1,0 +1,35 @@
+-# in app/views/index.html.haml
+
+%h2= @title
+
+%strong Maps
+%ul#Maps
+  %li
+    %a{href: @localTrails} Local Bike Trail Map
+  %li
+    %a{href: @fitnessTrails} Fitness Trails on Campus
+  %li
+    %a{href: @twoRiverTrails} Map of Future Two Rivers Greenway Route
+
+%strong Activism
+%ul#Activism
+  %li
+    %a{href: @bikeCoalition} New York Bicycling Coalition
+  %li
+    %a{href: @bingTransport} Binghamton Metropolitan Transport Society
+
+%strong Bicycle Repair
+%ul#BicycleRepair
+  %li
+    %a{href: @bikeMaintanence} Tune Up Your Bicycle for Spring
+  %li
+    %a{href: @bikeShop} Chenango Point Cycles
+
+%strong Other Bike Share Programs
+%ul#OtherBikeSharePrograms
+  %li
+    %a{href: @stonybrookBikeShare} Wolf Ride Bike Share
+  %li
+    %a{href: @cornellBikeShare} Big Red Bikes
+  %li
+    %a{href: @ithacaBikeShare} Bomber Bikes
