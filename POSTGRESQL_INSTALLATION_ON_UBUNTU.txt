@@ -1,0 +1,40 @@
+POSTGRESQL INSTALLATION ON UBUNTU
+
+--- This tutorial assumes you have not tried to install PostgreSQl already ---
+
+1) Establish a clean baseline to work with:
+	sudo apt-get update && sudo apt-get upgrade
+	sudo apt-get autoremove
+
+2) Add the PostgreSQL Repository:
+	wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
+
+   ***NOTE*** You need to replace the word "codename" in the following url with the result of the command:
+   	lsb_release -c
+
+   	sudo sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt/ codename-pgdg main" >> /etc/apt/sources.list.d/postgresql.list'
+
+3) Install PostgreSQL 9.3 using aptitude
+	sudo apt-get update
+	sudo apt-get -f install
+	sudo apt-get install postgresql-9.3 pgadmin3
+
+4) Assuming this all went well you will need to now set up your postgresql database
+	sudo -i -u postgres
+	createuser --interactive
+
+	--- Type in your username here, and say yes to superuser priviledges ---
+
+	createdb <username_you_just_typed_in>
+	exit
+
+5) Make sure that you set everything up right
+	psql
+
+	--- As long as this doesn't give any errors it worked ---
+
+6) Set up the bubhub database
+	--- From the root directory of the rails application ---
+	bundle exec rake db:create
+	bundle exec rake db:migrate
+
