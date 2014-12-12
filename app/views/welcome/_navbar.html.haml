@@ -22,7 +22,8 @@
             What is Bike Share?
             %span.sr-only (current)
         %li
-          %a{:href => "#"}Join Bike Share
+          //%a{:href => "#"}Join Bike Share
+          =link_to "Join Bike Share", join_page_path
         %li
           %a{:href=>"#"}How It Works
         %li.dropdown
@@ -35,7 +36,7 @@
             %li
               %a{:href=>"#"}Contact Our Shop
         %li
-          %a{:href=>"#"}Contact Us
+          =link_to "Contact Us", contact_us_page_path
         %li
           %a{:href=>"#"}Resources
       %form{:class=>"navbar-form navbar-right", :role=>"search"}
