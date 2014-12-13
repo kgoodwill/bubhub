@@ -18,11 +18,11 @@
     .collapse.navbar-collapse#bs-example-navbar-collapse-1
       %ul.nav.navbar-nav
         %li.active
-          %a{:href => "#"}
-            What is Bike Share?
-            %span.sr-only (current)
+          =link_to "What is Bike Share?", index_page_path
+          %span.sr-only (current)
         %li
-          %a{:href => "#"}Join Bike Share
+          //%a{:href => "#"}Join Bike Share
+          =link_to "Join Bike Share", join_page_path
         %li
           %a{:href=>"#"}How It Works
         %li.dropdown
@@ -31,13 +31,13 @@
             %span.caret
           %ul{:class=>"dropdown-menu", :role=>"menu"}
             %li
-              %a{:href=>"#"}Request Repair Help
+              =link_to "Information", bike_shop_info_page_path
             %li
-              %a{:href=>"#"}Contact Our Shop
+              %a{:href=>"#"} Request Repair Help
         %li
-          %a{:href=>"#"}Contact Us
+          =link_to "Contact Us", contact_us_page_path
         %li
-          %a{:href=>"#"}Resources
+          =link_to "Resources", resources_page_path
       %form{:class=>"navbar-form navbar-right", :role=>"search"}
         .form-group
           %input{:type=>"text", :class=>"form-control", :placeholder=>"Search"}
