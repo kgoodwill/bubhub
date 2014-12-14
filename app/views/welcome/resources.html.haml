@@ -1,35 +1,45 @@
 =render 'navbar'
+.container-fluid
+  %h2= @title
 
-%h2= @title
+  %strong Maps
+  %ul#Maps
+    %li
+      %a{href: @localTrails} Local Bike Trail Map
+      %p A map of Bike trails in the Binghamton/Vestal area
+    %li
+      %a{href: @fitnessTrails} Fitness Trails on Campus
+      %p A map of fitness trails provided by Campus Rec
+    %li
+      %a{href: @twoRiverTrails} Map of Future Two Rivers Greenway Route
+      %p A look at the future Two Rivers Greenway that is currently in progress
 
-%strong Maps
-%ul#Maps
-  %li
-    %a{href: @localTrails} Local Bike Trail Map
-  %li
-    %a{href: @fitnessTrails} Fitness Trails on Campus
-  %li
-    %a{href: @twoRiverTrails} Map of Future Two Rivers Greenway Route
+  %strong Activism
+  %ul#Activism
+    %li
+      %a{href: @bikeCoalition} New York Bicycling Coalition
+      %p Making New York State a Better Place to Ride Bikes
+    %li
+      %a{href: @bingTransport} Binghamton Metropolitan Transport Society
+      %p The organization in charge of transportation planning in Broome/Tioga County
 
-%strong Activism
-%ul#Activism
-  %li
-    %a{href: @bikeCoalition} New York Bicycling Coalition
-  %li
-    %a{href: @bingTransport} Binghamton Metropolitan Transport Society
+  %strong Bicycle Repair
+  %ul#BicycleRepair
+    %li
+      %a{href: @bikeMaintanence} Tune Up Your Bicycle for Spring
+      %p An instructional bicycle maintenance video
+    %li
+      %a{href: @bikeShop} Chenango Point Cycles
+      %p A full-service local bike shop serving the Binghamton/Vestal community.
 
-%strong Bicycle Repair
-%ul#BicycleRepair
-  %li
-    %a{href: @bikeMaintanence} Tune Up Your Bicycle for Spring
-  %li
-    %a{href: @bikeShop} Chenango Point Cycles
-
-%strong Other Bike Share Programs
-%ul#OtherBikeSharePrograms
-  %li
-    %a{href: @stonybrookBikeShare} Wolf Ride Bike Share
-  %li
-    %a{href: @cornellBikeShare} Big Red Bikes
-  %li
-    %a{href: @ithacaBikeShare} Bomber Bikes
+  %strong Other Bike Share Programs
+  %ul#OtherBikeSharePrograms
+    %li
+      %a{href: @stonybrookBikeShare} Wolf Ride Bike Share
+      %p Stonybrook’s Bike Share program
+    %li
+      %a{href: @cornellBikeShare} Big Red Bikes
+      %p Cornell’s Bike Share program
+    %li
+      %a{href: @ithacaBikeShare} Bomber Bikes
+      %p Ithaca College’s Bike Share Program
