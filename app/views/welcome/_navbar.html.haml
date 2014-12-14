@@ -29,8 +29,12 @@
         -else
           %li
             =link_to "Join Bike Share", join_page_path
-        %li
-          %a{:href=>"#"}How It Works
+        -if(@hilite == "how_it_works")
+          %li.active
+            %a{:href=>"#"}How It Works
+        -else
+          %li
+            %a{:href=>"#"}How It Works
         %li.dropdown
           %a{:href => "#", :class=>"dropdown-toggle", "data-toggle" =>"dropdown", :role=>"button", "aria-expanded" =>"false"}
             Bike Shop
