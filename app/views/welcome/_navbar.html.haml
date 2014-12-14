@@ -44,10 +44,18 @@
               =link_to "Information", bike_shop_info_page_path
             %li
               %a{:href=>"#"} Request Repair Help
-        %li
-          =link_to "Contact Us", contact_us_page_path
-        %li
-          =link_to "Resources", resources_page_path
+        -if(@hilite == "contact_us")
+          %li.active
+            =link_to "Contact Us", contact_us_page_path
+        -else
+          %li
+            =link_to "Contact Us", contact_us_page_path
+        -if(@hilite == "resources")
+          %li.active
+            =link_to "Resources", resources_page_path
+        -else
+          %li
+            =link_to "Resources", resources_page_path
       %form{:class=>"navbar-form navbar-right", :role=>"search"}
         .form-group
           %input{:type=>"text", :class=>"form-control", :placeholder=>"Search"}

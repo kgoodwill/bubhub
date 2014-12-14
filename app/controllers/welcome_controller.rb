@@ -11,7 +11,7 @@ class WelcomeController < ApplicationController
 
 	def resources
     @hilite = "resources"
-	  @title = "BikeShare Resources"
+	  @title = "Bike Share Resources"
     @localTrails = "https://binghamtonbikeshare.files.wordpress.com/2014/11/bikemap_2011_fwv-small.pdf"
     @fitnessTrails = "https://binghamtonbikeshare.files.wordpress.com/2014/11/fitnesstrailsmap1bu.pdf"
     @twoRiverTrails = "https://binghamtonbikeshare.files.wordpress.com/2014/11/gbgmaps.pdf"
@@ -25,15 +25,17 @@ class WelcomeController < ApplicationController
 	end
 
 	def contact_us
-
+    @hilite = "contact_us"
 		render
 	end
 
   def bike_shop
+    @hilite = "info"
     render
   end
 
   def how_it_works
+    @hilite = "how_it_works"
     render
   end
 end
