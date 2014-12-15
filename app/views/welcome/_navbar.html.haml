@@ -17,14 +17,24 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     .collapse.navbar-collapse#bs-example-navbar-collapse-1
       %ul.nav.navbar-nav
-        %li.active
-          =link_to "What is Bike Share?", index_page_path
-          %span.sr-only (current)
-        %li
-          //%a{:href => "#"}Join Bike Share
-          =link_to "Join Bike Share", join_page_path
-        %li
-          %a{:href=>"#"}How It Works
+        -if(@hilite == "index")
+          %li.active
+            =link_to "What is Bike Share?", index_page_path
+        -else
+          %li
+            =link_to "What is Bike Share?", index_page_path
+        -if(@hilite == "join")
+          %li.active
+            =link_to "Join Bike Share", join_page_path
+        -else
+          %li
+            =link_to "Join Bike Share", join_page_path
+        -if(@hilite == "how_it_works")
+          %li.active
+            %a{:href=>"#"}How It Works
+        -else
+          %li
+            %a{:href=>"#"}How It Works
         %li.dropdown
           %a{:href => "#", :class=>"dropdown-toggle", "data-toggle" =>"dropdown", :role=>"button", "aria-expanded" =>"false"}
             Bike Shop
