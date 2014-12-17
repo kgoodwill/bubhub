@@ -1,3 +1,4 @@
+=stylesheet_link_tag "navbar"
 %head
   %title Welcome to Bike Share
   //%link{ :rel => "stylesheet", :type => "text/css", :href => "../../dist/css/bootstrap.css"}
@@ -12,7 +13,8 @@
         %span.icon-bar
         %span.icon-bar
         %span.icon-bar
-      %a{:class => "navbar-brand", :href => "#"}BUBS
+      %a
+        =image_tag "bubs_logo.jpeg"
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     .collapse.navbar-collapse#bs-example-navbar-collapse-1
