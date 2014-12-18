@@ -16,8 +16,9 @@
 /tmp
 
 # RubyMine project files
-.idea
+.idea/*
 /.idea/*
+.idea/dataSources.xml
 
 # Textmate project files
 /*.tmproj
