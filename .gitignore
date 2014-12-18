@@ -14,3 +14,14 @@
 # Ignore all logfiles and tempfiles.
 /log/*.log
 /tmp
+
+# RubyMine project files
+.idea
+/.idea/*
+
+# Textmate project files
+/*.tmproj
+
+
+
+
