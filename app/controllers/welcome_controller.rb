@@ -8,6 +8,11 @@ class WelcomeController < ApplicationController
     @hilite = "join"
 		render
 	end
+    
+    def landing
+      @title = "Bike Share Landing"
+      @hilite = "landing"
+    end
 
 	def resources
     @hilite = "resources"
