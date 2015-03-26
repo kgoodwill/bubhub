@@ -47,7 +47,7 @@
             %li
               %a{:href=>"#"} Request Repair Help
             %li
-              %a{:href=>"#"} View Appointments
+              =link_to "View Appointments", view_appointments_month_page_path
         -if(@hilite == "contact_us")
           %li.active
             =link_to "Contact Us", contact_us_page_path
