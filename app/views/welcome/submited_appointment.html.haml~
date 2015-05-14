@@ -1,0 +1,16 @@
+=render 'navbar'
+.container-fluid
+  %h3 Email Sent!
+
+<br><br>
+<body>
+<blockquote>You will recieve an email from us soon confirming your request!
+</blockquote>
+<br><br>
+<center>
+<form action="view_appointments_month">
+<button>Return to View Appointments Page</button>
+</form>
+</center>
+
+</body>

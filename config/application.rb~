@@ -23,28 +23,18 @@ module Bubhub
       g.test_framework :rspec
     end
 
-  post '/contact' do 
-  require 'pony'
-  Pony.mail(
-    :name => params[:name],
-    :mail => params[:mail],
-    :body => params[:body],
-    :to => 'bikesharemechanic@gmail.com',
-    :subject => params[:name] + " has contacted you",
-    :body => params[:message],
-    :port => '587',
-    :via => :smtp,
-    :via_options => { 
-    :address              => 'smtp.gmail.com', 
-    :port                 => '587', 
-    :enable_starttls_auto => true, 
-    :user_name            => 'bikesharemechanic', 
-    :password             => 'BUbikeshare', 
-    :authentication       => :plain, 
-    :domain               => 'localhost.localdomain'
-  })
-redirect '/success' 
-end
+  config.action_mailer.smtp_settings = {
+  :address              => "smtp.gmail.com",
+  :port                 => 587,
+  :domain               => "yourdomain.dev",
+  :user_name            => "from@yourdomain.dev",
+  :password             => "Super-Secure-Password",
+  :authentication       => :plain,
+  :enable_starttls_auto => true
+  }
 
+  config.action_mailer.default_url_options = {
+  :host => "yourdomain.dev"
+  }
   end
 end
