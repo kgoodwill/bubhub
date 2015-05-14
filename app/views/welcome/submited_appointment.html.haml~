@@ -4,13 +4,18 @@
 
 <br><br>
 <body>
-<blockquote>You will recieve an email from us soon confirming your request!
-</blockquote>
+&nbsp;&nbsp;&nbsp;&nbsp;You will recieve an email from us soon confirming your request!
 <br><br>
-<center>
+
 <form action="view_appointments_month">
-<button>Return to View Appointments Page</button>
+&nbsp;&nbsp;&nbsp;&nbsp;<button>Return to View Appointments Page</button>
 </form>
-</center>
+
+<br><br>
+
+<form action="make_appointments">
+&nbsp;&nbsp;&nbsp;&nbsp;<button>Make Another Appointment</button>
+</form>
+
 
 </body>
