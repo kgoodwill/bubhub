@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -13,6 +14,8 @@ Rails.application.routes.draw do
   get '/how_it_works', to: "welcome#how_it_works", as: :how_it_works_page
   get '/landing', to: "welcome#landing", as: :landing_page
   get '/view_appointments_month', to: 'welcome#view_appointments_month', as: :view_appointments_month_page
+  get '/make_appointments', to: 'welcome#make_appointments', as: :make_appointments_page
+  post '/make_appointments', to: 'welcome#make_appointments', as: :make_appointments_page_2
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
