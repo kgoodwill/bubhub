@@ -1,0 +1,43 @@
+=render 'navbar'
+.container-fluid
+  %h3 Make Appointments
+
+<br><br>
+
+<body>
+<center>
+<form action="submited_appointment" method="GET">
+Name:<br>
+<input type="text" name="name">
+<br><br>
+Email:<br>
+<input type="email" name="email">
+<br><br>
+Date of Appointment Wanted:<br>
+<input type="date" name="date" min="2015-01-01" max="2100-12-31">
+<br><br>
+Time of Appointment Wanted:<br>
+<select name="time">
+<option value="default">Pick a Time</option>
+<option value="11:00AM">11:00AM</option>
+<option value="11:30AM">11:30AM</option>
+<option value="12:00PM">12:00PM</option>
+<option value="12:30PM">12:30PM</option>
+<option value="1:00PM">1:00PM</option>
+<option value="1:30PM">1:30PM</option>
+<option value="2:00PM">2:00PM</option>
+<option value="2:30PM">2:30PM</option>
+<option value="3:00PM">3:00PM</option>
+<option value="3:30PM">3:30PM</option>
+<option value="4:00PM">4:00PM</option>
+</select>
+<br><br>
+Problem with Bike:<br>
+<textarea name="problem" rows="10" cols="30">
+</textarea>
+<br><br>
+<input type="submit" value="Submit">
+<input type="reset" value="Reset">
+</form>
+</center>
+</body>

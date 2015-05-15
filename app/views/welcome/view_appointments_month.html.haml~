@@ -1,0 +1,19 @@
+=render 'navbar'
+.container-fluid
+  <h1>View Appointments</h1>
+
+<br>
+
+<form action="make_appointments">
+&nbsp;&nbsp;&nbsp;&nbsp;<button>Request to Make an Appointment</button>
+</form>
+
+<br>
+<center>
+<iframe src="https://www.google.com/calendar/embed?src=bikesharemechanic%40gmail.com&ctz=America/New_York" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+</center>
+<br><br>
+
+<form action="make_appointments">
+<button>Request to Make an Appointment</button>
+</form>

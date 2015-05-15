@@ -1,0 +1,23 @@
+=render 'navbar'
+.container-fluid
+	%h3 Bike Shop
+	%img{:src => "http://binghamtonbikeshare.files.wordpress.com/2014/09/bikeshop.jpg?w=675&h=380"}
+	%br
+	%h3 Need Some Help?
+	%p The Binghamton University Bike Shop is our brand new facility located in Room 001 in the basement of the Old Union, adjacent to the Meal Plan Office.
+	%p Please come to us during our office hours (below) to get any Binghamton University bike-related information.
+	%p If you would like help fixing your own bike, please submit a Request Repair Help form using the button below.  Please bear with us as our shop develops throughout the year. Any tips or suggestions are helpful.
+	%button.btn.btn-success.btn-lg Request Repair
+	%hr
+	%h3 Want to Get Involved?
+	%p Our mechanics have all taken a bicycle maintenance course through Outdoor Pursuits. If you are interested in taking this Bike Share-oriented 1 credit course next semester, please contact us. Class size is limited and spots are on a first-come-first-serve basis.
+	%p Otherwise, just stop by our office hours and let us know you want to help out!
+	%button.btn.btn-success.btn-lg=link_to "Contact Us", contact_us_page_path
+	%hr
+	%h3 Hours
+	%p 
+		%b Our office hours are as follows:
+	%p Wednesdays: 1:00 PM to 4:00 PM
+	%p Thursdays: 10:30 AM to 1:00 PM
+	%p Fridays: 12:00 PM to 5:00 PM
+	%hr
